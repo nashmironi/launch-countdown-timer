@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root{
+    --Grayish-blue:rgba(52, 54, 80, 0.52);
+    --Soft-red: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --mostly-black: hsl(234, 17%, 12%);
+    --gray:#8385A9;
+}
+
+
+
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+    font-weight: 700px;
+    font-family: "Red Hat Text", sans-serif;
+    flex-direction: column;
+    
+}
+.main{
+    background-image: url(./bg-stars.svg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    height: 200px;
+    background-image: url(./pattern-hills.svg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: var(--White);
+    width: 327px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 6.136px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 142px;
+}
+.icons{
+    width: 136px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cl:hover path{
+ 
+    fill: var(--Soft-red);
+}
+.rec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 54px;
+}
+.txt{
+   color: var(--gray);
+   font-size: 7px;
+   font-family: "Red Hat Text", sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2.959px;
+   font-weight: 700;
+}
+.HHH{
+    height: 71px;
+    width: 71px;
+    border-radius:4px;
+    background-color: var(--Grayish-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nms{
+    text-align: center;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -1.08px;
+    color: var(--Soft-red);
+    
+}
+
+
+
+@media(min-width:1440px){
+
+    h1{
+        
+        width: 600px;
+        height: 29px;
+        font-size: 22px;
+        letter-spacing: 7.5px;
+        text-transform: uppercase;
+        margin-top: 142px;        
+    }
+    .numbers{
+        gap: 32px;
+        margin-top: 104px;
+    }
+    .HHH{
+        height: 150px;
+        width: 150px;
+        border-radius:8px;
+       
+    }
+    .txt{
+        font-size: 14px;
+        letter-spacing: 5.919px;
+        
+     }
+     .nms{
+        font-size: 80px;
+        line-height: 71px;
+        letter-spacing: -2.4px;
+        /* color: var(--Soft-red); */
+
+    }
+    
+   
+
+
+
+
+}
